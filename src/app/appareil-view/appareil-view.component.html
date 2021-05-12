@@ -1,0 +1,35 @@
+<div class="container">
+ <div class="row">
+   <div class="col-xs-12">
+    <h2>Mes appareils</h2>
+    
+       <ul>
+       <app-appareil *ngFor="let appareil of appareils; let i = index"
+       [appareilName]="appareil.name"
+       [appareilStatus]="appareil.status"
+       [id]="appareil.id"
+       [index]="i"
+       >
+               
+       </app-appareil>
+        </ul>
+    
+        <div class="bouttons">
+                <button class="btn btn-success"
+                        (click)='onAllumer()'>Tout allumer
+                </button>
+
+                <button class="btn btn-danger"
+                    (click)="onEteindre()">Tout éteindre
+                </button>
+
+                <button class="btn btn-primary"
+                        (click)="onNewAppareil()">Nouvel Appareil
+                </button>
+        </div> 
+
+    <p id="maj">Dernière mise à jour : {{ lastUpdate | async | date: 'short' | uppercase }}</p>
+   </div>
+ </div>
+</div>
+

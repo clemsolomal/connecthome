@@ -1,0 +1,37 @@
+<li class='glob'>
+<ul class="ensemble">
+
+<li [ngClass]="{'list-group-item':true,
+   'list-group-item-danger': appareilStatus==='éteint',
+    'list-group-item-success': appareilStatus ==='allumé'}">
+       
+  <h5 [ngStyle]="{color: getColor()}">{{appareilName}}:{{appareilStatus}}.</h5>
+  <button class="btn btn-sm btn-success"
+          *ngIf="appareilStatus === 'éteint'"
+          (click)="onSwitch()">
+    Allumer
+  </button>
+
+  <button class="btn btn-sm btn-danger"
+          *ngIf="appareilStatus === 'allumé'"
+          (click)="onSwitch()">Eteindre
+  </button>
+</li>
+        
+
+<li class="text">
+  
+  
+
+  <button id="suppr" class="btn btn-default" (click)="onDeleteAppareil(appareils[id])">
+    Supprimer
+  </button>
+      
+  
+</li>
+
+</ul>
+</li>
+
+
+

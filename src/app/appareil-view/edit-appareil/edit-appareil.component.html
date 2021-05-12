@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2>Enregistrer un nouvel appareil</h2>
+    <form [formGroup]="appareilForm" (ngSubmit)="onSaveAppareil()">
+      <div class="form-group">
+        <label for="name">Nom de l'appareil</label>
+        <input type="text" id="name"
+               class="form-control" formControlName="name" >
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status"
+               class="form-control" formControlName="status">
+          <option value="éteint">éteint</option>
+          <option value="allumé">allumé</option>
+        </select>
+      </div>
+      
+      
+      <button class="btn btn-success" [disabled]="appareilForm.invalid"
+            type="submit">Enregistrer
+      </button>
+      
+    </form>
+    <p>{{message}}</p>
+    <button class="btn btn-default" (click)="OnBack()">Retour</button>
+  </div>
+</div>

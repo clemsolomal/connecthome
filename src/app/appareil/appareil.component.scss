@@ -1,0 +1,30 @@
+ul{
+    list-style-type: none;
+}
+.text{
+    display:block;
+}
+
+.list-group-item, .list-group-item-danger, .list-group-item-success{
+    display:flex;
+    justify-content: space-between;
+    width:30vw;
+    height: 8vh;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.glob{
+    margin-left: 5vw;
+}
+.ensemble{
+    display:flex;
+    margin-bottom: 2vh;
+}
+.btn-default{
+    height: 8vh;
+}
+#suppr{
+    display:none;
+}
