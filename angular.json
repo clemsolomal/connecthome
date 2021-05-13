@@ -141,16 +141,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mon-projet-angular:serve"
+            "devServerTarget": "connecthome:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mon-projet-angular:serve:production"
+              "devServerTarget": "connecthome:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "mon-projet-angular"
+  "defaultProject": "connecthome"
 }
