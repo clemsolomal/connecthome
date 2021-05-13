@@ -35,7 +35,7 @@ export class SeConnecterComponent implements OnInit {
     
     this.authService.signInUser(email, password).then(
       () => {
-        this.router.navigate(['/appareils']);
+        this.router.navigate(['appareils']);
       },
       (error) => {
         this.errorMessage = error;

@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
 
   onSignOut() {
     this.authService.signOutUser();
-    this.router.navigate(['/connexion']);
+    this.router.navigate(['connexion']);
   }
 
 }
