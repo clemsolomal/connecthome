@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mon-projet-angular": {
+    "connecthome": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -93,18 +93,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mon-projet-angular:build"
+            "browserTarget": "connecthome:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mon-projet-angular:build:production"
+              "browserTarget": "connecthome:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mon-projet-angular:build"
+            "browserTarget": "connecthome:build"
           }
         },
         "test": {
