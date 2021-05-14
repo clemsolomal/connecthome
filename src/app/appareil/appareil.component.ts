@@ -2,7 +2,7 @@ import { Component,Input, OnInit } from '@angular/core';
 import { AppareilService } from '../services/appareil.service';
 import {Appareil} from "../models/appareil.model";
 import {Router} from "@angular/router";
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-appareil',

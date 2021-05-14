@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppareilService } from '../services/appareil.service';
 import { AuthService } from '../services/auth.service';
-import {Subscription} from 'rxjs/Subscription';
+import {Subscription} from 'rxjs';
 import { Router } from '@angular/router';
 import {Appareil} from "../models/appareil.model";
 
